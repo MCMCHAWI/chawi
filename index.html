@@ -1,0 +1,135 @@
+<html >
+<head>
+	<title>M C</title>
+	<link rel="stylesheet" type="text/css" href="h.css">
+	<script src="h.js"></script>
+</head>
+<body>
+<div class="cap">COULEUR DE L ARRIERE PLAN
+	<p style="cursor:pointer;" onclick="bgc()">Click here</p>
+</div>
+<form>
+<div class="tbdal">TBDAL<br>
+	<input type="text" id="c">
+	<input type="button" value="change" onclick="swap()">
+	<input type="text" id="h"><br><br>
+</div>
+<div class="premier">LES NOMBRES PREMIERS<br>
+	<input type="text" id="n">
+	<input type="button" value="generer" onclick="prm()">
+	<p id="nbr"></p>
+</div>
+<div class="chng">CHANGER LA TAILLE ET LA COULEUR DU TEXTE
+	<p id="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<select id="tl" onchange="tal()">
+		<option>12</option><option>16</option><option>20</option><option>100</option>
+	</select>
+	<select id="slt" onchange="color()">
+		<option>red</option><option>blue</option><option>green</option>
+	</select><br>
+</div>
+<div>
+ZOOM IN OR OUT
+<img src="h.jpg" id="mg" style="height:100;">
+<input type="button" value="+" onclick="plus()">
+<input type="button" value="-" onclick="moins()"><br></div>
+<div>
+LES DIVISEURS
+<input type="text" id="qr">
+<input type="button" value="generer" onclick="dvsr()">
+<p id="dvs"></p><br></div>
+<div>LA DATE
+<input type="button" value="date" onclick="setInterval(dat,1000)">
+<p id="dat"></p><br></div>
+<div>IMAGE ZOOM IN AND OUT
+<img src="h.jpg"id="mgi" style="height:100;position:absolute;top:5;right:0" onmouseover="ms()" onmouseout="ot()"><br>
+<input type="button" value="monter" onclick="mnt()"><br>
+<input type="button" value="stop" onclick="arr()"><br>
+<input type="button" value="descendre" onclick="des()"><br></div>
+<div>	NJMAT
+<input type="button" value="njmat" onclick="etoile()">
+<p id="nj"></p><br></div>
+<div>google search
+<input type="text" id="psw" >
+<input type="button" value="pass" onclick="pswd()">
+<a href="https://www.google.com/search?q=" target="_blank" id="ps"></a><br></div>
+<div>COULEUR DE L ARRIERE PLAN V2
+<select id="bkg" onchange="bakg()">
+	<option>red</option><option>blue</option><option>green</option>
+</select><br></div>
+<div>CHRONO
+<p id="ex"></p>
+<input type="button" value="start" onclick="r=setInterval(sta,1000)">
+<input type="button" value="stop" onclick="clearInterval(r)">
+<input type="button" value="0" onclick="zer(r)"> <br></div>
+<div>4 IMG
+<img src="TD_JS/numbers/0.jpg" height="100px" width="75px" id="fr">
+<input type="button" value="<" onclick="precedent()">
+<input type="button" value=">" onclick="suivant()"> <br></div>
+<div>DAKCHI LI TATKTB
+<input type="text" id="dl" onkeyup="dalit()">
+<p id="dd"></p><br></div>
+<div>INCREASE VALUE OF BUTTON
+<input type="button" id="incr" value="0" onclick="inc()">
+<input type="button" id="incr" value="0" onclick="res()"><br></div>
+<div>3TSAWER
+<table>
+<tr>
+<td><img src="TD_JS/numbers/0.jpg" id="a"></td>
+<td><img src="TD_JS/numbers/1.jpg" id="b"></td>
+<td><img src="TD_JS/numbers/2.jpg" id="c"></td>
+</tr>
+</table></div>
+<div><a href="https://mcmchawi.github.io/"target="_blank">My website</a></div>
+<div><p id="app" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<input type="button" value="appear" onclick="app()">
+<input type="button" value="disappear" onclick="disapp()"></div>
+<div><input id="dev" maxlength="2" type="text">
+<input type="button" value="devine" onclick="devin()">
+<p id="lb"></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
