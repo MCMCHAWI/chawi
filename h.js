@@ -130,7 +130,7 @@ function arr(){
 }
 var a=0;
 function change(x){
-	document.getElementById("fr").src="TD_JS/numbers/"+x+".jpg";
+	document.getElementById("fr").src=x+".jpg";
 }
 function suivant(){
     a++;
